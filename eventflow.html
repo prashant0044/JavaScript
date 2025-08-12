@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Flow</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+        }
+        #parentdiv{
+            border-radius: 10px;
+            
+            background-color: beige;
+            width: 200px;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parentdiv" >
+        <ul>
+            <li>apple</li>
+            <li>mango</li>
+        </ul>
+    </div>
+    <script src="eventflow.js"></script>
+</body>
+
+</html>
