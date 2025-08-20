@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Programmin</title>
+</head>
+
+<body>
+    <h1>Async programming</h1>
+    <script>
+        const fetchdata=fetch("https://jsonplaceholder.typicode.com/albums/1");
+      
+    
+
+        // create a promise
+        const mypromise = new Promise((resolve, reject) => {
+            let success = true;
+            if (success) {
+                resolve('operation successful..');
+
+            }
+            else {
+                reject('operation failed..');
+            }
+        });
+        // consume the promise
+        fetchdata
+            // catch the success
+            .then((response) => {
+                return response.json().then((data)=>{
+                    console.log(data);
+                });
+            })
+            // catch the error
+            .catch((error) => {
+                console.log(error);
+            })
+            // general code for promise
+            .finally(() => {
+                console.log('operation called..');
+            });
+    </script>
+</body>
+
+</html>

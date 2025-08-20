@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Programming</title>
+</head>
+
+<body>
+    <h1>Async programming</h1>
+    <script>
+        // async await
+        async function albums() {
+            // success
+            try {
+                const fetchalbum = await fetch("https://jsonplaceholder.typicode.com/albums/1");
+                // it makes the data into readable format
+                const data = await fetchalbum.json();
+                console.log(data);
+            }
+            // error
+            catch (error) {
+                console.log(error);
+            }
+        }
+        albums();
+    </script>
+
+</body>
+</html>
