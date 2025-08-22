@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: rgb(224, 224, 224);
+
+
+}
+
+.container {
+    background: linear-gradient(100deg, rgb(141, 2, 172), rgb(225, 1, 214));
+    padding: 20px;
+    /* border-radius: 0px 0px 30px 30px; */
+    box-shadow: 0px 2px 15px rgb(78, 77, 77);
+    /* width: 100vw; */
+    text-align: center;
+    border: none;
+    /* height: 100vh; */
+
+
+}
+
+header {
+    margin-bottom: 1rem;
+    margin-top: 0;
+
+
+}
+
+p {
+    font-size: 1rem;
+}
+
+.search-container {
+    margin-bottom: 1.5rem;
+
+}
+
+input {
+    border-radius: 5px;
+    width: 25vw;
+    height: 5vh;
+    box-shadow: 0px 1px 12px lightgrey;
+    border: none;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+button {
+    border-radius: 5px;
+    width: 6vw;
+    height: 5vh;
+    box-shadow: 0px 1px 12px lightgrey;
+    border: none;
+    font-size: 1rem;
+    padding: 5px;
+
+}
+
+.results{
+
+   /* width: 100vw; */
+   padding: 1.5rem;
+   margin-top: 1rem;
+   /* border-radius: 30px; */
+   font-size: 2.5rem;
+   display: grid;
+
+}
+
+
+/* movie grid */
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.movie-card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 1.5rem;
+}
+
+.movie-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f1f5f9;
+}
+
+.movie-year {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.error-message {
+  background: #7f1d1d;
+  color: #fecaca;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #94a3b8;
+}
