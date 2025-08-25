@@ -1,5 +1,3 @@
-// Api key AIzaSyCBrS2qC_Jt8uiOMnuU-M81Mj1ZItRO-EM
-// Api URL "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCBrS2qC_Jt8uiOMnuU-M81Mj1ZItRO-EM"
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //Generate response
   async function generateResponse(prompt) {
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCBrS2qC_Jt8uiOMnuU-M81Mj1ZItRO-EM`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=?`,
       {
         method: "POST",
         headers: {
